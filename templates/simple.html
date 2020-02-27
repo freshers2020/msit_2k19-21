@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitation</title>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/name.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+h1
+{font-family: "Monotype Corsiva";
+}
+h3
+{
+ font-family: "Monotype Corsiva";
+}
+p
+{
+font-family: "Monotype Corsiva";
+
+
+}
+p.a{
+padding-right: 200pt;
+}
+p.b{
+padding-left: 500pt;
+}
+    body {
+  /* The image used */
+  background-image: url("https://i.pinimg.com/originals/5f/f7/f0/5ff7f0000cf8256019155c4f20368539.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+
+<body>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+{% for i in list_1 %}
+      {% set item_1 = list_1[loop.index-1] %}
+      {% set item_2 = list_2[loop.index-1] %}
+        {% if val == item_1 %}
+
+  <center>
+  <div class="container">
+      <br>
+      <br>
+      <br>
+         <img class="img-circle" width="404" height="336" src="{{ url_for('static', filename='' +item_1+'.jpg' ) }}" />
+
+</div>
+      </center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h1 align="center" class="ml11" style="font-family: 'Monotype Corsiva'">Hello...
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters" style="font-family: 'Monotype Corsiva'">  {{ item_2 }} ...</span>
+  </span>
+</h1>
+
+
+        {% endif %}
+{% endfor %}
+
+
+  <br>
+  <br>
+  <center>
+      <h2>
+          <p>So that we remain in touch forever,we have planned a small party.</p>
+      <p>you are invited to mark the date by your lovely presence,we will mark the moments with great happiness.</p>
+<br>
+  <p class="a">Date:-</p>
+
+  <p>March 8th 2020</p>
+<p class="a">Venue:-</p>
+    <p>Leonia Resorts</p>
+                <p class="b">By your</p>
+                 <p class="b">Beloved seniors</p>
+          </h2>
+      </center>
+<script type="text/javascript" src="/static/js/name.js"></script>
+</body>
+</html>
+
+

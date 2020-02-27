@@ -1,6 +1,6 @@
 import pandas as pd
 from flask import Flask, Markup, render_template, request
-import re
+
 
 app = Flask(__name__)
 projectpath=""
